@@ -19,7 +19,7 @@ myFunction();
 
 // It is able to do this because a nested function is able to reach into a functions outer scope and retrieve any needed variables, etc. This is what a closure is.
 
-
+ 
 
 /* 🚀🚀🚀 Task 2: Counter 🚀🚀🚀 */
 /* Use summation to do the following:
@@ -59,10 +59,15 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function animalNames(array){
+      const newArray = [];
+      array.forEach(function(item){
+        newArray.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`);
+    });
+    return newArray;
   }
   
+//   console.log(animalNames(zooAnimals));
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
   The zoo needs a list of all their animal's names converted to lower case. 

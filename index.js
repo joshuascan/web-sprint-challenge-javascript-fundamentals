@@ -59,13 +59,19 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(array){
-      const newArray = [];
-      array.forEach(function(item){
-        newArray.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`);
-    });
+//   function animalNames(array){
+//       const newArray = [];
+//       array.forEach(function(item){
+//         newArray.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`);
+//     });
+//     return newArray;
+//   }
+
+function animalNames(array){
+    let newArray = [];
+    array.forEach(item => newArray.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`));
     return newArray;
-  }
+}
 
 //   console.log(animalNames(zooAnimals));
 
@@ -142,9 +148,9 @@ function greeting(firstName, lastName){
   
   // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁 
   // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
-  // console.log(consume(2, 2, add)); // 4
-  // console.log(consume(10, 16, multiply)); // 160
-  // console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+  console.log(consume(2, 2, add)); // 4
+  console.log(consume(10, 16, multiply)); // 160
+  console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
   
   
 // 🦁💪 Stretch: If you haven't already, convert your array method callbacks into arrow functions - make sure you comment out this section before you submit your work 🦁💪

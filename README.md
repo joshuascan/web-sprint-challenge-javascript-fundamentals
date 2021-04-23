@@ -29,7 +29,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
-    Both receive a function as an argument and run through every item in an array. forEach doesn't require a return statement and doesn't return a new array, while map requires a return statement and does return a new array. Map would be preferable if you needed a new array with mutated data.
+    Both receive a function as an argument and run through every item in an array using the supplied function. forEach doesn't require a return statement and doesn't return a new array, while map requires a return statement and does return a new array. forEach would be used when you need to mutate the data within an array, while map would be used when you need a new array with revised data.
 
 2. Explain the difference between a callback and a higher order function.
 
@@ -44,7 +44,7 @@ Edit this document to include your answers after each question. Make sure to lea
     1. In global scope, 'this' will return the window.
     2. In implicit binding, 'this' refers to the object to the left of the period on which the function was called.
     3. In explicit binding, 'this' can be set to a specific value using call, apply, or bind.
-    4. When using the 'new' keyword with a constructor function, a new object is created and 'this' will point to the new object.
+    4. In new binding, when using the 'new' keyword with a constructor function, a new object is created and 'this' will point to the new object.
 
 5. Why do we need super() in an extended class?
 

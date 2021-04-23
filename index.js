@@ -81,8 +81,8 @@ function animalNames(array){
   */
 
   function lowerCaseNames(array){
-    const newArray = array.map(item => item.animal_name.toLowerCase());
-    return newArray;
+    const lowerCase = array.map(item => item.animal_name.toLowerCase());
+    return lowerCase;
   }
   
   

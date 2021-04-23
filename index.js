@@ -17,8 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-// It is able to do this because a nested function is able to reach into a functions outer scope and retrieve any needed variables, etc. This is what a closure is.
-
+// It is able to do this because inner functions are able to reach into outer functions and retrieve any needed variables. In this case, the "internal" variable is in the outer scope of the "nestedFunction" function so "console.log(internal)" is able to pull data from it.
  
 
 /* 🚀🚀🚀 Task 2: Counter 🚀🚀🚀 */
@@ -68,9 +67,9 @@ const zooAnimals = [
 //   }
 
 function animalNames(array){
-    let newArray = [];
-    array.forEach(item => newArray.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`));
-    return newArray;
+    let displayNames = [];
+    array.forEach(item => displayNames.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`));
+    return displayNames;
 }
 
 //   console.log(animalNames(zooAnimals));
@@ -258,8 +257,8 @@ const cube = new CubeMaker({
     length: 5
 });
 
-console.log(cube.volume());
-console.log(cube.surfaceArea());
+// console.log(cube.volume());
+// console.log(cube.surfaceArea());
 
 
   /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑 */
